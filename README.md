@@ -1,2 +1,3 @@
-# ts-collections
-a set of collections for typescript
+# tsar
+
+Typescript Suite of Awesome Resources
