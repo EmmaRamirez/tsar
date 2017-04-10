@@ -1,0 +1,33 @@
+{
+  "name": "tsar",
+  "version": "0.0.0-development",
+  "description": "Typescript Suite of Awesome Resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmmaRamirez/tsar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmmaRamirez/tsar/issues"
+  },
+  "homepage": "https://github.com/EmmaRamirez/tsar#readme",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
