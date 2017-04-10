@@ -25,3 +25,4 @@ tsar provies these typed utilities
 - Partial
 - Readonly
 - Queue
+- Action
