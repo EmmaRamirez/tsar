@@ -1,5 +1,5 @@
 {
-  "name": "tsar",
+  "name": "@emmaramirez/tsar",
   "version": "0.0.0-development",
   "description": "Typescript Suite of Awesome Resources",
   "main": "index.js",
@@ -13,8 +13,12 @@
     "type": "git",
     "url": "https://github.com/EmmaRamirez/tsar.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "utilities",
+    "typescript",
+    "typed-utilities"
+  ],
+  "author": "Emma Ramirez <ramirez.emma.g@gmail.com> emmaramirez.me",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EmmaRamirez/tsar/issues"
