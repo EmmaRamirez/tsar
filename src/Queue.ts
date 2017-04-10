@@ -10,7 +10,7 @@ export class Queue<T> implements Queue<T> {
   }
 
   public enqueu(item: T):void {
-    if (this.full()) {
+    if (this.isFull()) {
       throw new Error('Queue is full.');
     }
     this.list.push(item);
@@ -21,11 +21,11 @@ export class Queue<T> implements Queue<T> {
     return dequeued;
   }
 
-  public empty():boolean {
+  public isEmpty():boolean {
     return this.list.length > 0 ? false : true;
   }
 
-  public full():boolean {
+  public isFull():boolean {
     return this.list.length > this.size ? true : false;
   }
 }
