@@ -24,3 +24,4 @@ tsar provies these typed utilities
 - Nullable
 - Partial
 - Readonly
+- Queue
