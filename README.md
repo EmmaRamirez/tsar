@@ -29,3 +29,4 @@ tsar provies these typed utilities
 - Action
 - BaseBinaryTree
 - BinaryTreeNode
+- Maybe
