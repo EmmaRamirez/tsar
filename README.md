@@ -26,3 +26,5 @@ tsar provies these typed utilities
 - Readonly
 - Queue
 - Action
+- BaseBinaryTree
+- BinaryTreeNode

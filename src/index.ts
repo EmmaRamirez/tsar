@@ -5,3 +5,5 @@ export { Queue } from './Queue';
 export { Action } from './Action';
 export { StringEnum } from './StringEnum';
 export { Singleton } from './Singleton';
+export { BaseBinaryTree } from './BaseBinaryTree';
+export { BinaryTreeNode } from './BinaryTreeNode';
