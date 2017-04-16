@@ -25,9 +25,6 @@
     "url": "https://github.com/EmmaRamirez/tsar/issues"
   },
   "homepage": "https://github.com/EmmaRamirez/tsar#readme",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
     "semantic-release": "^6.3.2",
