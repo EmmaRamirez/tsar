@@ -28,7 +28,7 @@ class Maybe<T> implements Maybe<T> {
   }
 
   public evaluate():Nothing | Just<T> {
-    const value = typeof this.val === 'function' ?  this.val() : this.val;
+    const value = typeof this.val === 'function' ?  (this as any).val() : this.val;
 
     return (value === undefined || value === null)
       ? value
@@ -42,7 +42,7 @@ class Maybe<T> implements Maybe<T> {
     if (maybe instanceof Nothing) {
       return maybe;
     } else if (maybe instanceof Just) {
-      return maybe.value;
+      return (maybe as any).value;
     } else {
       return maybe;
     }
@@ -56,10 +56,10 @@ class Maybe<T> implements Maybe<T> {
   }
 
   public isJust():boolean {
-    return this.evaluate().isJust();
+    return (this.evaluate() as any).isJust();
   }
 
   public isNothing():boolean {
-    return this.evaluate().isNothing();
+    return (this.evaluate() as any).isNothing();
   }
 }

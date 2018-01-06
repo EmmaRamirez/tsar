@@ -16,7 +16,7 @@ export class BaseBinaryTree<T> implements BaseBinaryTree<T> {
     const parentStack = [];
     parentStack.push(this.root);
     do {
-      const top:BinaryTreeNode<T> = parentStack.pop();
+      const top:BinaryTreeNode<T> = parentStack.pop() as any;
       visit(top.key);
       if (top.right) {
         parentStack.push(top.right);
@@ -36,8 +36,8 @@ export class BaseBinaryTree<T> implements BaseBinaryTree<T> {
         node = node.left;
       } else {
         node = parentStack.pop();
-        visit(node.key);
-        node = node.right;
+        visit((node as any).key);
+        node = (node as any).right;
       }
     }
   }
